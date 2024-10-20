@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #2c122a;
+        }
+    
+        table{
+            background-image: url("back5.webp");
+            color: white;
+            font-size: 20px;
+            
+         }
+    </style>
+    
+
+</head>
+<body>
+    <center>
+        <h1 style="color:white"><i>Registration Form </i></h1>
+        
+        <form>
+            <table border="2" cellpadding="5" cellspacing="0" width="450">
+        
+            <tr>    
+            <td><label>First Name : </label></td>
+            <td><input name ="input" placeholder="Enter First Name" autofocus required/></td>
+            </tr>
+            <tr>
+            <td><label>Last Name : </label></td>
+            <td><input name ="input" placeholder="Enter Last Name"/></td>
+            </tr>
+            <tr>
+            <td><label>Email : </label></td>
+            <td><input name ="input" placeholder="Enter Email Id" required/></td>
+            </tr>
+            <tr>
+            <td><label>Password : </label></td>
+            <td><input name ="input" placeholder="Enter Password" maxlength="3" size="20" required/></td>
+            </tr>
+            
+            
+            
+            <tr>
+            <td><label>Age : </label></td>
+            <td><input name ="input" type="range"/><br>
+            <pre><h4><i>18                 35</i></h4></pre></td>
+            </tr>
+            
+            <tr>
+            <td><label>Gender : </label></td>
+            <td><input name="input" type="radio" value="male"/>
+            <label>male</label>
+            <input name="input" type="radio" value="female"/>
+            <label>female</label>
+            <input name="input" type="radio" value="other"/>
+            <label>other</label></td>
+            </tr>
+        
+
+            
+        
+            <tr>
+            <td><label>Languages : </label></td>
+                
+            <td><input name="input" type="checkbox" />
+                <label>Marathi </label>
+            
+        
+            <input name="input" type="checkbox" />
+            <label>English</label>
+            
+            
+            <input name="input" type="checkbox" />
+            <label>Hindi </label>
+            
+            
+            <input name="input" type="checkbox" />
+            <label>German </label></td>
+            </tr>
+        
+            <tr>
+            <td><label>State : </label></td>
+            <td><select name="state">
+                <option>Select</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Rajstan">Rajstan</option>
+                </select></td>
+                </tr>
+            
+            
+            <tr>
+            <td><label>Description : </label></td>
+            <td><textarea name="message"></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label>Submit Button : </label></td>
+    
+                <td><input type="submit" value="submit"/></td>
+                </tr>
+                <tr>
+                <td><label>Reset Button : </label></td>
+                <td><input type="reset" value="Reset"/></td>
+                </tr>
+            
+            </table>
+
+
+
+        </form>
+        
+    </center>
+</body>
+</html>
