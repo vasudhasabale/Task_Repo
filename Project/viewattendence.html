@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Member Details & Attendance</title>
+  <title>Admin Attendance Page</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100">
@@ -31,7 +31,7 @@
                     <span class="material-icons mr-4"><img src="images/menu1.png" width="20px" height="20px"></span>
                     <span><a href="registration.html">Admin</a></span>
                     <span class="ml-auto material-icons group-hover:rotate-180 transition-transform">
-                      <img src="images/V.png" width="15px" height="15px">
+                      <img src="images/v.png" width="15px" height="15px">
                     </span>
                   </div>
                   <!-- Dropdown Submenu -->
@@ -119,7 +119,9 @@
             </ul>
           </nav>
         </div>
-  <!-- Main content -->
+
+    <!-- Main Content -->
+     <!-- Main content -->
   <main class="flex-1 p-6">
     <!-- Header -->
     <header class="flex justify-between items-center mb-6">
@@ -136,105 +138,119 @@
         <img src="images/photo.png" alt="User" class="w-10 h-10 rounded-full">
       </div>
     </header>
-
     
 
-    <!-- Attendance Section -->
-    <section>
-      <div class="bg-white p-4 rounded-lg shadow">
-        <h2 class="text-lg font-semibold text-gray-800 mb-4">Attendance</h2>
-        <div class="flex gap-4 mb-4">
-          <input type="text" placeholder="dd-MMM-yyyy" class="border p-2 rounded w-1/4">
-          <select class="border p-2 rounded w-1/4">
-            <option value="">-Select Class-</option>
-          </select>
-          <input type="time" class="border p-2 rounded w-1/4">
-          <input type="time" class="border p-2 rounded w-1/4">
-          <button class="bg-blue-500 text-white px-4 py-2 rounded">Take Attendance</button>
-          <button class="bg-green-500 text-white px-4 py-2 rounded"><span><a href="viewattendence.html">View Attendence</a></span></button>
-        </div>
-        <div class="overflow-auto">
-          <table class="w-full border-collapse">
+      <section class="mt-6">
+        <div class="bg-white rounded-md shadow-md p-6">
+          <h2 class="text-lg font-semibold mb-4">Attendence List</h2>
+          <div class="grid grid-cols-5 gap-4 mb-4">
+            <input type="date" class="border-gray-300 rounded-md px-4 py-2 col-span-1">
+            <select class="border-gray-300 rounded-md px-4 py-2 col-span-1">
+              <option value="">-Select Class-</option>
+              <option value="Yoga">Yoga</option>
+              <option value="Cardio">Cardio</option>
+            </select>
+            <input type="time" class="border-gray-300 rounded-md px-4 py-2 col-span-1">
+            <input type="time" class="border-gray-300 rounded-md px-4 py-2 col-span-1">
+            <button class="bg-blue-500 text-white rounded-md px-4 py-2 col-span-1">View Attendance</button>
+          </div>
+          <table class="w-full border-collapse border border-gray-200 mt-4">
             <thead>
-              <tr class="bg-gray-200 text-gray-600 text-left">
-                <th class="p-4">Photo</th>
-                <th class="p-4">Name</th>
-                <th class="p-4">Present</th>
-                <th class="p-4">Absent</th>
+              <tr class="bg-gray-100">
+                <th class="border border-gray-300 px-4 py-2">Photo</th>
+                <th class="border border-gray-300 px-4 py-2">Name</th>
+                <th class="border border-gray-300 px-4 py-2">Attendance</th>
               </tr>
             </thead>
             <tbody>
-              <!-- Sample Rows -->
-              <tr class="border-b">
-                <td class="p-4">
-                  <img src="images/Ellipse 524.png" alt="Staff" class="rounded-full w-10 h-10">
+              <!-- Example Row -->
+              <tr>
+                <td class="border border-gray-300 px-4 py-2">
+                  <img src="images/Ellipse 524.png" alt="Staff" class="w-10 h-10 rounded-full mx-auto">
                 </td>
-                <td class="p-4">Staff Full Name</td>
-                <td class="p-4">
-                  <input type="radio" name="attendance1" value="Present">
-                </td>
-                <td class="p-4">
-                  <input type="radio" name="attendance1" value="Absent">
+                <td class="border border-gray-300 px-4 py-2 text-center">Staff Full Name</td>
+                <td class="border border-gray-300 px-4 py-2 text-center">
+                  <span class="text-green-500 font-bold">Present</span>
                 </td>
               </tr>
-              <!-- Repeat rows -->
-              <tr class="border-b">
-                <td class="p-4">
-                  <img src="images/Ellipse 524.png" alt="Staff" class="rounded-full w-10 h-10">
+              <tr>
+                <td class="border border-gray-300 px-4 py-2">
+                  <img src="images/Ellipse 524.png" alt="Staff" class="w-10 h-10 rounded-full mx-auto">
                 </td>
-                <td class="p-4">Staff Full Name</td>
-                <td class="p-4">
-                  <input type="radio" name="attendance2" value="Present">
-                </td>
-                <td class="p-4">
-                  <input type="radio" name="attendance2" value="Absent">
+                <td class="border border-gray-300 px-4 py-2 text-center">Staff Full Name</td>
+                <td class="border border-gray-300 px-4 py-2 text-center">
+                  <span class="text-red-500 font-bold">Absent</span>
                 </td>
               </tr>
 
-              <tr class="border-b">
-                <td class="p-4">
-                  <img src="images/Ellipse 524.png" alt="Staff" class="rounded-full w-10 h-10">
+              <tr>
+                <td class="border border-gray-300 px-4 py-2">
+                  <img src="images/Ellipse 524.png" alt="Staff" class="w-10 h-10 rounded-full mx-auto">
                 </td>
-                <td class="p-4">Staff Full Name</td>
-                <td class="p-4">
-                  <input type="radio" name="attendance3" value="Present">
-                </td>
-                <td class="p-4">
-                  <input type="radio" name="attendance3" value="Absent">
+                <td class="border border-gray-300 px-4 py-2 text-center">Staff Full Name</td>
+                <td class="border border-gray-300 px-4 py-2 text-center">
+                  <span class="text-green-500 font-bold">Present</span>
                 </td>
               </tr>
+              <tr>
 
-              <tr class="border-b">
-                <td class="p-4">
-                  <img src="images/Ellipse 524.png" alt="Staff" class="rounded-full w-10 h-10">
-                </td>
-                <td class="p-4">Staff Full Name</td>
-                <td class="p-4">
-                  <input type="radio" name="attendance4" value="Present">
-                </td>
-                <td class="p-4">
-                  <input type="radio" name="attendance4" value="Absent">
-                </td>
-              </tr>
+                <tr>
+                    <td class="border border-gray-300 px-4 py-2">
+                      <img src="images/Ellipse 524.png" alt="Staff" class="w-10 h-10 rounded-full mx-auto">
+                    </td>
+                    <td class="border border-gray-300 px-4 py-2 text-center">Staff Full Name</td>
+                    <td class="border border-gray-300 px-4 py-2 text-center">
+                      <span class="text-green-500 font-bold">Present</span>
+                    </td>
+                  </tr>
+                  <tr>
 
-              <tr class="border-b">
-                <td class="p-4">
-                  <img src="images/Ellipse 524.png" alt="Staff" class="rounded-full w-10 h-10">
-                </td>
-                <td class="p-4">Staff Full Name</td>
-                <td class="p-4">
-                  <input type="radio" name="attendance5" value="Present">
-                </td>
-                <td class="p-4">
-                  <input type="radio" name="attendance5" value="Absent">
-                </td>
-              </tr>
+                    <tr>
+                        <td class="border border-gray-300 px-4 py-2">
+                          <img src="images/Ellipse 524.png" alt="Staff" class="w-10 h-10 rounded-full mx-auto">
+                        </td>
+                        <td class="border border-gray-300 px-4 py-2 text-center">Staff Full Name</td>
+                        <td class="border border-gray-300 px-4 py-2 text-center">
+                          <span class="text-green-500 font-bold">Present</span>
+                        </td>
+                      </tr>
+                      <tr>
+
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">
+                              <img src="images/Ellipse 524.png" alt="Staff" class="w-10 h-10 rounded-full mx-auto">
+                            </td>
+                            <td class="border border-gray-300 px-4 py-2 text-center">Staff Full Name</td>
+                            <td class="border border-gray-300 px-4 py-2 text-center">
+                              <span class="text-red-500 font-bold">Absent</span>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="border border-gray-300 px-4 py-2">
+                              <img src="images/Ellipse 524.png" alt="Staff" class="w-10 h-10 rounded-full mx-auto">
+                            </td>
+                            <td class="border border-gray-300 px-4 py-2 text-center">Staff Full Name</td>
+                            <td class="border border-gray-300 px-4 py-2 text-center">
+                              <span class="text-red-500 font-bold">Absent</span>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="border border-gray-300 px-4 py-2">
+                              <img src="images/Ellipse 524.png" alt="Staff" class="w-10 h-10 rounded-full mx-auto">
+                            </td>
+                            <td class="border border-gray-300 px-4 py-2 text-center">Staff Full Name</td>
+                            <td class="border border-gray-300 px-4 py-2 text-center">
+                              <span class="text-green-500 font-bold">Present</span>
+                            </td>
+                          </tr>
+                          <tr>
             </tbody>
           </table>
         </div>
-      </div>
-    </section>
-  </main>
-
+      </section>
+    </main>
+  </div>
 </body>
 </html>
