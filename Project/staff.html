@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>admindashboard</title>
+    <script>
+       module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+      </script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Sidebar -->
+    <div class="flex h-screen">
+      <!-- Left Sidebar -->
+      <div class="w-64 h-screen bg-black text-white">
+          <!-- Logo -->
+          <div class="flex items-center justify-center h-20 bg-black">
+            <img src="images\logo.png" alt="Fitness Logo" class="h-16">
+          </div>
+        
+          <!-- Navigation Menu -->
+          <nav class="mt-4">
+            <ul>
+              <!-- Admin -->
+              
+              
+
+
+              <li>
+                <div class="group">
+                  <div class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                    <span class="material-icons mr-4"><img src="images/menu1.png" width="20px" height="20px"></span>
+                    <span>Admin</span>
+                    <span class="ml-auto material-icons group-hover:rotate-180 transition-transform">
+                      V
+                    </span>
+                  </div>
+                  <!-- Dropdown Submenu -->
+                  <ul class="hidden group-hover:block bg-gray-800">
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer text-orange-400">
+                        <span class="material-icons mr-4"><img src="images/staff org.png" width="25px" height="25px"></span>
+                        <span><a href="staff.html">Staff/Trainee</a></span>
+                      </li>
+                      <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                        <span class="material-icons mr-4"><img src="images/membership.png" width="25px" height="25px"></span>
+                        <span><a href="membership.html">Membership</a></span>
+                      </li>
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                      <span class="material-icons mr-4"><img src="images/all classes.png" width="25px" height="25px"></span>
+                      <span><a href="allclasses.html">All Classes</a></span>
+                    </li>
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                      <span class="material-icons mr-4"><img src="images/attendence.png" width="25px" height="25px"></span>
+                      <span><a href="attendence.html">Attendence</a></span>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </li>
+
+
+
+              <!-- All Members Section -->
+              <li>
+                <div class="group">
+                  <div class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                    <span class="material-icons mr-4"><img src="images/menu2.png" width="25px" height="25px"></span>
+                    <span>All members</span>
+                    <span class="ml-auto material-icons group-hover:rotate-180 transition-transform">
+                      V
+                    </span>
+                  </div>
+                  <!-- Dropdown Submenu -->
+                  <ul class="hidden group-hover:block bg-gray-800">
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                      <span class="material-icons mr-4"><img src="images/menu3 white.png" width="25px" height="25px"></span>
+                      <span><a href="addtrainee.html">Add Trainee</a></span>
+                    </li>
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                      <span class="material-icons mr-4"><img src="images/menu4.png" width="25px" height="25px"></span>
+                      <span><a href="droptrainee.html">Dropped Trainee</a></span>
+                    </li>
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer">
+                      <span class="material-icons mr-4"><img src="images/menu5.png" width="25px" height="25px"></span>
+                      <span><a href="memberdetail.html">Member Detail</a></span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+        
+              <!-- Trainer -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu6.png" width="25px" height="25px"></span>
+                <span>Trainer</span>
+              </li>
+        
+              <!-- Trainee -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu7.png" width="25px" height="25px"></span>
+                <span>Trainee</span>
+              </li>
+        
+              <!-- Health Updates -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu8.png" width="25px" height="25px"></span>
+                <span>Health Updates</span>
+              </li>
+        
+              <!-- Member Payments -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu9.png" width="25px" height="25px"></span>
+                <span>Member Payments</span>
+              </li>
+        
+              <!-- Plan -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu10.png" width="25px" height="25px"></span>
+                <span>Plan</span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+<div class="w-4/5 p-6">
+  <!-- Header -->
+  <div class="flex justify-between items-center mb-6">
+      <h2 class="text-2xl font-semibold">Welcome Admin!</h2>
+      <div class="flex items-center space-x-4">
+          <img src="images\Notifications.png" alt="Class Image" class="w-8 h-8 mr-4">
+          <img src="images\Settings.png" alt="Class Image" class="w-8 h-8">
+          <span class="text-gray-800 font-medium">Username</span>
+          <img src="images/photo.png" alt="User" class="w-10 h-10 ">
+      </div>
+  </div>
+  
+  <div class="max-w-7xl mx-auto mt-6 px-4">
+    <div class="bg-white rounded-lg shadow-lg p-6">
+      <!-- Header Row with Staff/Trainers, Search Bar, and Button -->
+      <div class="flex justify-between items-center mb-4 ">
+        <!-- Left Section: Title and Search -->
+        <div class="flex items-center space-x-4">
+          <span class="text-lg font-semibold">Staff/Trainers</span>
+          <input
+            type="text"
+            placeholder="Search Staff name"
+            class="border border-gray-300 rounded-lg px-4 py-2 ml-30 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+        <!-- Right Section: Add Button -->
+        
+        <button
+          class="flex items-center bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+          </svg><span><a href="addtrainer.html">Add Staff/Trainer</a></span>
+        </button>
+      </div>
+  
+      <!-- Table Section -->
+      <div class="w-full overflow-x-auto">
+        <table class="table-auto w-full text-left whitespace-no-wrap">
+          <thead class="bg-gray-300"> <tr>
+                  <th class="px-4 py-3 title-font font-medium tracking-wider text-gray-900 text-sm">Photo</th>
+                  <th class="px-4 py-3 title-font font-medium tracking-wider text-gray-900 text-sm">Staff Name</th>
+                  <th class="px-4 py-3 title-font font-medium tracking-wider text-gray-900 text-sm">Contact No.</th>
+                  <th class="px-4 py-3 title-font font-medium tracking-wider text-gray-900 text-sm">Profession</th>
+                  <th class="px-4 py-3 title-font font-medium tracking-wider text-gray-900 text-sm">Experience</th>
+                  <th class="px-4 py-3 title-font font-medium tracking-wider text-gray-900 text-sm">Email Id</th>
+                  <th class="px-4 py-3 title-font font-medium tracking-wider text-gray-900 text-sm">Batch</th>
+                  <th class="px-4 py-3 title-font font-medium tracking-wider text-gray-900 text-sm">Details</th>
+                  <th class="px-4 py-3 title-font font-medium tracking-wider text-gray-900 text-sm">Action</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td class="px-4 py-3">
+                      <img src="images/Ellipse 527.png" alt="Staff 1" class="w-10 h-10 rounded-full">
+                  </td>
+                  <td class="px-4 py-3">Staff full name</td>
+                  <td class="px-4 py-3">1234567890</td>
+                  <td class="px-4 py-3">Yoga</td>
+                  <td class="px-4 py-3">2 yrs</td>
+                  <td class="px-4 py-3">abc@gmail.com</td>
+                  <td class="px-4 py-3">Morning</td>
+                  <td class="px-4 py-3">
+                    <a href="viewdetail.html" class="text-blue-500 hover:underline">View Details</a>
+                </td>
+                <td class="px-4 py-3">
+                  <a href="#" class="text-blue-500 hover:underline mr-2">
+                      <img src="images/edit.png" alt="Edit" class="inline-block w-5 h-5">
+                  </a>
+                  <a href="#" class="text-red-500 hover:underline">
+                      <img src="images/delete.png" alt="Delete" class="inline-block w-5 h-5">
+                  </a>
+              </td>
+              </tr>
+              <tr>
+                <td class="px-4 py-3">
+                    <img src="images\Ellipse 527.png" alt="Staff 1" class="w-10 h-10 rounded-full">
+                </td>
+                <td class="px-4 py-3">Staff full name</td>
+                <td class="px-4 py-3">1234567890</td>
+                <td class="px-4 py-3">Yoga</td>
+                <td class="px-4 py-3">2 yrs</td>
+                <td class="px-4 py-3">abc@gmail.com</td>
+                <td class="px-4 py-3">Morning</td>
+                <td class="px-4 py-3">
+                <a href="viewdetail.html" class="text-blue-500 hover:underline">View Details</a>
+              </td>
+              <td class="px-4 py-3">
+                <a href="#" class="text-blue-500 hover:underline mr-2">
+                    <img src="images/edit.png" alt="Edit" class="inline-block w-5 h-5">
+                </a>
+                <a href="#" class="text-red-500 hover:underline">
+                    <img src="images\delete.png" alt="Delete" class="inline-block w-5 h-5">
+                </a>
+            </td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3">
+                  <img src="images\Ellipse 527.png" alt="Staff 1" class="w-10 h-10 rounded-full">
+              </td>
+              <td class="px-4 py-3">Staff full name</td>
+              <td class="px-4 py-3">1234567890</td>
+              <td class="px-4 py-3">Yoga</td>
+              <td class="px-4 py-3">2 yrs</td>
+              <td class="px-4 py-3">abc@gmail.com</td>
+              <td class="px-4 py-3">Morning</td>
+              <td class="px-4 py-3">
+                <a href="#" class="text-blue-500 hover:underline">View Details</a>
+            </td>
+            <td class="px-4 py-3">
+              <a href="#" class="text-blue-500 hover:underline mr-2">
+                  <img src="images\edit.png" alt="Edit" class="inline-block w-5 h-5">
+              </a>
+              <a href="#" class="text-red-500 hover:underline">
+                  <img src="images\delete.png" alt="Delete" class="inline-block w-5 h-5">
+              </a>
+          </td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3">
+                <img src="images\Ellipse 527.png" alt="Staff 1" class="w-10 h-10 rounded-full">
+            </td>
+            <td class="px-4 py-3">Staff full name</td>
+            <td class="px-4 py-3">1234567890</td>
+            <td class="px-4 py-3">Yoga</td>
+            <td class="px-4 py-3">2 yrs</td>
+            <td class="px-4 py-3">abc@gmail.com</td>
+            <td class="px-4 py-3">Morning</td>
+            <td class="px-4 py-3">
+              <a href="#" class="text-blue-500 hover:underline">View Details</a>
+          </td>
+          <td class="px-4 py-3">
+            <a href="#" class="text-blue-500 hover:underline mr-2">
+                <img src="images\edit.png" alt="Edit" class="inline-block w-5 h-5">
+            </a>
+            <a href="#" class="text-red-500 hover:underline">
+                <img src="images\delete.png" alt="Delete" class="inline-block w-5 h-5">
+            </a>
+        </td>
+        </tr>
+        <tr>
+          <td class="px-4 py-3">
+              <img src="images\Ellipse 527.png" alt="Staff 1" class="w-10 h-10 rounded-full">
+          </td>
+          <td class="px-4 py-3">Staff full name</td>
+          <td class="px-4 py-3">1234567890</td>
+          <td class="px-4 py-3">Yoga</td>
+          <td class="px-4 py-3">2 yrs</td>
+          <td class="px-4 py-3">abc@gmail.com</td>
+          <td class="px-4 py-3">Morning</td>
+          <td class="px-4 py-3">
+            <a href="#" class="text-blue-500 hover:underline">View Details</a>
+        </td>
+        <td class="px-4 py-3">
+          <a href="#" class="text-blue-500 hover:underline mr-2">
+              <img src="images\edit.png" alt="Edit" class="inline-block w-5 h-5">
+          </a>
+          <a href="#" class="text-red-500 hover:underline">
+              <img src="images\delete.png" alt="Delete" class="inline-block w-5 h-5">
+          </a>
+      </td>
+      </tr>
+      <tr>
+        <td class="px-4 py-3">
+            <img src="images\Ellipse 527.png" alt="Staff 1" class="w-10 h-10 rounded-full">
+        </td>
+        <td class="px-4 py-3">Staff full name</td>
+        <td class="px-4 py-3">1234567890</td>
+        <td class="px-4 py-3">Yoga</td>
+        <td class="px-4 py-3">2 yrs</td>
+        <td class="px-4 py-3">abc@gmail.com</td>
+        <td class="px-4 py-3">Morning</td>
+        <td class="px-4 py-3">
+          <a href="#" class="text-blue-500 hover:underline">View Details</a>
+      </td>
+      <td class="px-4 py-3">
+        <a href="#" class="text-blue-500 hover:underline mr-2">
+            <img src="images\edit.png" alt="Edit" class="inline-block w-5 h-5">
+        </a>
+        <a href="#" class="text-red-500 hover:underline">
+            <img src="images\delete.png" alt="Delete" class="inline-block w-5 h-5">
+        </a>
+    </td>
+    </tr>
+    <tr>
+      <td class="px-4 py-3">
+          <img src="images\Ellipse 527.png" alt="Staff 1" class="w-10 h-10 rounded-full">
+      </td>
+      <td class="px-4 py-3">Staff full name</td>
+      <td class="px-4 py-3">1234567890</td>
+      <td class="px-4 py-3">Yoga</td>
+      <td class="px-4 py-3">2 yrs</td>
+      <td class="px-4 py-3">abc@gmail.com</td>
+      <td class="px-4 py-3">Morning</td>
+      <td class="px-4 py-3">
+        <a href="#" class="text-blue-500 hover:underline">View Details</a>
+    </td>
+    <td class="px-4 py-3">
+      <a href="#" class="text-blue-500 hover:underline mr-2">
+          <img src="images\edit.png" alt="Edit" class="inline-block w-5 h-5">
+      </a>
+      <a href="#" class="text-red-500 hover:underline">
+          <img src="images\delete.png" alt="Delete" class="inline-block w-5 h-5">
+      </a>
+    </td>
+    </tr>
+    <tr>
+      <td class="px-4 py-3">
+          <img src="images\Ellipse 527.png" alt="Staff 1" class="w-10 h-10 rounded-full">
+      </td>
+      <td class="px-4 py-3">Staff full name</td>
+      <td class="px-4 py-3">1234567890</td>
+      <td class="px-4 py-3">Yoga</td>
+      <td class="px-4 py-3">2 yrs</td>
+      <td class="px-4 py-3">abc@gmail.com</td>
+      <td class="px-4 py-3">Morning</td>
+      <td class="px-4 py-3">
+        <a href="#" class="text-blue-500 hover:underline">View Details</a>
+    </td>
+    <td class="px-4 py-3">
+      <a href="#" class="text-blue-500 hover:underline mr-2">
+          <img src="images\edit.png" alt="Edit" class="inline-block w-5 h-5">
+      </a>
+      <a href="#" class="text-red-500 hover:underline">
+          <img src="images\delete.png" alt="Delete" class="inline-block w-5 h-5">
+      </a>
+    </td>
+    </tr>
+              </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

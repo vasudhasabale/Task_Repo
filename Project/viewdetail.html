@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>admindashboard</title>
+    <script>
+       module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+      </script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Sidebar -->
+    <div class="flex h-screen">
+      <!-- Left Sidebar -->
+      <div class="w-64 h-screen bg-black text-white">
+          <!-- Logo -->
+          <div class="flex items-center justify-center h-20 bg-black">
+            <img src="images\logo.png" alt="Fitness Logo" class="h-16">
+          </div>
+        
+          <!-- Navigation Menu -->
+          <nav class="mt-4">
+            <ul>
+              <!-- Admin -->
+              
+              
+
+
+              <li>
+                <div class="group">
+                  <div class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                    <span class="material-icons mr-4"><img src="images\adminvector.png" width="20px" height="20px"></span>
+                    <span>Admin</span>
+                    <span class="ml-auto material-icons group-hover:rotate-180 transition-transform">
+                      V
+                    </span>
+                  </div>
+                  <!-- Dropdown Submenu -->
+                  <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                    <span class="material-icons mr-4"><img src="images/staff.png" width="25px" height="25px"></span>
+                    <span><a href="staff.html">Staff/Trainee</a></span>
+                  </li>
+                  <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                    <span class="material-icons mr-4"><img src="images/membership.png" width="25px" height="25px"></span>
+                    <span><a href="membership.html">Membership</a></span>
+                  </li>
+                  <ul class="hidden group-hover:block bg-gray-800">
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                      <span class="material-icons mr-4"><img src="images/all classes.png" width="25px" height="25px"></span>
+                      <span><a href="addtrainee.html">All Classes</a></span>
+                    </li>
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                      <span class="material-icons mr-4"><img src="images/attendence.png" width="25px" height="25px"></span>
+                      <span><a href="attendence.html">Attendence</a></span>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </li>
+
+
+
+              <!-- All Members Section -->
+              <li>
+                <div class="group">
+                  <div class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                    <span class="material-icons mr-4"><img src="images/menu2.png" width="25px" height="25px"></span>
+                    <span>All members</span>
+                    <span class="ml-auto material-icons group-hover:rotate-180 transition-transform">
+                      V
+                    </span>
+                  </div>
+                  <!-- Dropdown Submenu -->
+                  <ul class="hidden group-hover:block bg-gray-800">
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                      <span class="material-icons mr-4"><img src="images/menu3 white.png" width="25px" height="25px"></span>
+                      <span><a href="addtrainee.html">Add Trainee</a></span>
+                    </li>
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                      <span class="material-icons mr-4"><img src="images/menu4.png" width="25px" height="25px"></span>
+                      <span><a href="droptrainee.html">Dropped Trainee</a></span>
+                    </li>
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer">
+                      <span class="material-icons mr-4"><img src="images/menu5.png" width="25px" height="25px"></span>
+                      <span><a href="memberdetail.html">Member Detail</a></span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+        
+              <!-- Trainer -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu6.png" width="25px" height="25px"></span>
+                <span>Trainer</span>
+              </li>
+        
+              <!-- Trainee -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu7.png" width="25px" height="25px"></span>
+                <span>Trainee</span>
+              </li>
+        
+              <!-- Health Updates -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu8.png" width="25px" height="25px"></span>
+                <span>Health Updates</span>
+              </li>
+        
+              <!-- Member Payments -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu9.png" width="25px" height="25px"></span>
+                <span>Member Payments</span>
+              </li>
+        
+              <!-- Plan -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu10.png" width="25px" height="25px"></span>
+                <span>Plan</span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+<div class="w-4/5 p-6">
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-semibold">Welcome Admin!</h2>
+        <div class="flex items-center space-x-4">
+            <img src="images\Notifications.png" alt="Class Image" class="w-8 h-8 mr-4">
+            <img src="images\Settings.png" alt="Class Image" class="w-8 h-8">
+            <span class="text-gray-800 font-medium">Username</span>
+            <img src="images\placeholder.png" alt="User" class="w-10 h-10 ">
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-6 p-6 bg-white border-2 border-blue-500 rounded-lg shadow-lg">
+        <div class="flex items-center justify-between">
+          <h2 class="text-lg font-semibold">View Details</h2>
+          <input
+            type="text"
+            class="w-full md:w-1/3 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            placeholder="Search Staff name"
+          />
+        </div>
+      
+        <hr class="border-gray-300 my-4" />
+        <p class="text-gray-600">Personal Details:</p>
+      
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="col-span-1 flex flex-col items-center">
+            <div class="w-32 h-32 mb-4 mt-20 rounded-full overflow-hidden border-2 border-gray-300">
+              <img src="images\Ellipse 520.png" alt="Profile Picture" class="w-full h-full object-cover" />
+            </div>
+      
+            <div class="mt-6 text-center">
+              <h4 class="text-lg font-semibold mb-2">About</h4>
+              <p class="text-gray-600 mb-4 w-55">
+                She is a certified yoga instructor with over 2 years of experience teaching a variety of yoga styles, including Vinyasa, Hatha, and Yin yoga. She specializes in creating inclusive, beginner-friendly classes while also offering advanced poses for seasoned practitioners. Sarah's approach combines mindfulness, breath control, and strength-building techniques. She is passionate about helping students enhance their flexibility, balance, and inner calm, making every session both challenging and rejuvenating.
+              </p>
+              <h4 class="text-lg font-semibold">Date of Birth</h4>
+              <p class="text-gray-600">September 24, 1995</p>
+            </div>
+          </div>
+      
+          <div class="col-span-2 grid grid-cols-2 gap-1">
+            <div>
+              <h3 class="text-xl font-bold mt-20 ">Staff full Name</h3>
+              <p class="text-gray-500 ">Yoga</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-8 mt-20">Contact Details</h4>
+                <p class="text-gray-600 mb-8">
+                    <span class="font-medium">Email:</span> abc@gmail.com
+                  </p>
+                  <p class="text-gray-600 mb-8">
+                    <span class="font-medium">Contact No.:</span> 1234567890
+                  </p>
+                  <p class="text-gray-600 mb-8">
+                    <span class="font-medium">Address:</span> 123 Harmony Lane, Suite 48<br>
+                    Melodyville, State 56789<br>
+                    Country
+                  
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>admindashboard</title>
+    <script>
+       module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+      </script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Sidebar -->
+    <div class="flex h-screen">
+      <!-- Left Sidebar -->
+      <div class="w-64 h-screen bg-black text-white">
+          <!-- Logo -->
+          <div class="flex items-center justify-center h-20 bg-black">
+            <img src="images/logo.png" alt="Fitness Logo" class="h-16">
+          </div>
+        
+          <!-- Navigation Menu -->
+          <nav class="mt-4">
+            <ul>
+              <!-- Admin -->
+              
+               <li>
+                <div class="group">
+                  <div class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                    <span class="material-icons mr-4"><img src="images/menu1.png" width="20px" height="20px"></span>
+                    <span>Admin</span>
+                    <span class="ml-auto material-icons group-hover:rotate-180 transition-transform">
+                      V
+                    </span>
+                  </div>
+                  <!-- Dropdown Submenu -->
+                  <ul class="hidden group-hover:block bg-gray-800">
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                        <span class="material-icons mr-4"><img src="images/staff.png" width="25px" height="25px"></span>
+                        <span><a href="staff.html">Staff/Trainee</a></span>
+                      </li>
+                      <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer text-orange-400">
+                        <span class="material-icons mr-4"><img src="images/membership org.png" width="25px" height="25px"></span>
+                        <span><a href="membership.html">Membership</a></span>
+                      </li>
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                      <span class="material-icons mr-4"><img src="images/all classes.png" width="25px" height="25px"></span>
+                      <span><a href="allclasses.html">All Classes</a></span>
+                    </li>
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                      <span class="material-icons mr-4"><img src="images/attendence.png" width="25px" height="25px"></span>
+                      <span><a href="attendence.html">Attendence</a></span>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </li>
+
+
+
+              <!-- All Members Section -->
+              <li>
+                <div class="group">
+                  <div class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                    <span class="material-icons mr-4"><img src="images/menu2.png" width="25px" height="25px"></span>
+                    <span>All members</span>
+                    <span class="ml-auto material-icons group-hover:rotate-180 transition-transform">
+                      V
+                    </span>
+                  </div>
+                  <!-- Dropdown Submenu -->
+                  <ul class="hidden group-hover:block bg-gray-800">
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                      <span class="material-icons mr-4"><img src="images/menu3 white.png" width="25px" height="25px"></span>
+                      <span><a href="addtrainee.html">Add Trainee</a></span>
+                    </li>
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                      <span class="material-icons mr-4"><img src="images/menu4.png" width="25px" height="25px"></span>
+                      <span><a href="droptrainee.html">Dropped Trainee</a></span>
+                    </li>
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer">
+                      <span class="material-icons mr-4"><img src="images/menu5.png" width="25px" height="25px"></span>
+                      <span><a href="memberdetail.html">Member Detail</a></span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+        
+              <!-- Trainer -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu6.png" width="25px" height="25px"></span>
+                <span>Trainer</span>
+              </li>
+        
+              <!-- Trainee -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu7.png" width="25px" height="25px"></span>
+                <span>Trainee</span>
+              </li>
+        
+              <!-- Health Updates -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu8.png" width="25px" height="25px"></span>
+                <span>Health Updates</span>
+              </li>
+        
+              <!-- Member Payments -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu9.png" width="25px" height="25px"></span>
+                <span>Member Payments</span>
+              </li>
+        
+              <!-- Plan -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu10.png" width="25px" height="25px"></span>
+                <span>Plan</span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+<div class="w-4/5 p-6">
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-semibold">Welcome Admin!</h2>
+        <div class="flex items-center space-x-4">
+            <img src="images\Notifications.png" alt="Class Image" class="w-8 h-8 mr-4">
+            <img src="images\Settings.png" alt="Class Image" class="w-8 h-8">
+            <span class="text-gray-800 font-medium">Username</span>
+            <img src="images/photo.png" alt="User" class="w-10 h-10 ">
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-6 px-4">
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <!-- Header Row with Staff/Trainers, Search Bar, and Button -->
+          <div class="flex justify-between items-center mb-4 ">
+            <!-- Left Section: Title and Search -->
+            <div class="flex items-center space-x-4">
+              <span class="text-lg font-semibold">Membership</span>
+              
+            </div>
+            <!-- Right Section: Add Button -->
+            <input
+            type="text"
+            placeholder="Search Membership"
+            class="border border-gray-300 rounded-lg px-4 py-2 ml-60 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+            <button
+              class="flex items-center bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:outline-none">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg><span><a href="addmembership.html">Add Membership</a></span>
+            </button>
+          </div>
+      
+          <!-- Table Section -->
+          <div class="w-full overflow-x-auto">
+            <table class="table-auto w-full text-left whitespace-no-wrap">
+              <thead class="bg-gray-300"> <tr>
+                      <th class="px-4 py-3 title-font font-medium tracking-wider text-gray-900 text-sm">Sr.No.</th>
+                      <th class="px-4 py-3 title-font font-medium tracking-wider text-gray-900 text-sm">Membership Name</th>
+                      <th class="px-4 py-3 title-font font-medium tracking-wider text-gray-900 text-sm">Description</th>
+                      <th class="px-4 py-3 title-font font-medium tracking-wider text-gray-900 text-sm">Amount</th>
+                      <th class="px-4 py-3 title-font font-medium tracking-wider text-gray-900 text-sm">Membership Period</th>
+                      <th class="px-4 py-3 title-font font-medium tracking-wider text-gray-900 text-sm">Installment Period</th>
+                      <th class="px-4 py-3 title-font font-medium tracking-wider text-gray-900 text-sm">Action</th>
+                     
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                     
+                      <td class="px-4 py-3">1</td>
+                      <td class="px-4 py-3">Basic Membership</td>
+                      <td class="px-4 py-3">Offers access to standard gym facilities like cardio and weight equipment during regular hours. Ideal for individuals seeking general fitness without additional perks.</td>
+                      <td class="px-4 py-3">1000 /-</td>
+                      <td class="px-4 py-3">30 Days</td>
+                      <td class="px-4 py-3">1 Month</td>
+                     
+                    <td class="px-4 py-3">
+                      <a href="#" class="text-blue-500 hover:underline mr-2">
+                          <img src="pages\images\editvector.png" alt="Edit" class="inline-block w-5 h-5">
+                      </a>
+                      <a href="#" class="text-red-500 hover:underline">
+                          <img src="pages\images\deletevector.png" alt="Delete" class="inline-block w-5 h-5">
+                      </a>
+                  </td>
+                  </tr>
+                  <tr>
+                     
+                    <td class="px-4 py-3">1</td>
+                    <td class="px-4 py-3">Basic Membership</td>
+                    <td class="px-4 py-3 w-60">Offers access to standard gym facilities like cardio and weight equipment during regular hours. Ideal for individuals seeking general fitness without additional perks.</td>
+                    <td class="px-4 py-3">1000 /-</td>
+                    <td class="px-4 py-3">30 Days</td>
+                    <td class="px-4 py-3">1 Month</td>
+                   
+                  <td class="px-4 py-3">
+                    <a href="#" class="text-blue-500 hover:underline mr-2">
+                        <img src="pages\images\editvector.png" alt="Edit" class="inline-block w-5 h-5">
+                    </a>
+                    <a href="#" class="text-red-500 hover:underline">
+                        <img src="pages\images\deletevector.png" alt="Delete" class="inline-block w-5 h-5">
+                    </a>
+                </td>
+                </tr>
+                <tr>
+                     
+                    <td class="px-4 py-3">1</td>
+                    <td class="px-4 py-3">Basic Membership</td>
+                    <td class="px-4 py-3">Offers access to standard gym facilities like cardio and weight equipment during regular hours. Ideal for individuals seeking general fitness without additional perks.</td>
+                    <td class="px-4 py-3">1000 /-</td>
+                    <td class="px-4 py-3">30 Days</td>
+                    <td class="px-4 py-3">1 Month</td>
+                   
+                  <td class="px-4 py-3">
+                    <a href="#" class="text-blue-500 hover:underline mr-2">
+                        <img src="pages\images\editvector.png" alt="Edit" class="inline-block w-5 h-5">
+                    </a>
+                    <a href="#" class="text-red-500 hover:underline">
+                        <img src="pages\images\deletevector.png" alt="Delete" class="inline-block w-5 h-5">
+                    </a>
+                </td>
+                </tr>
+                <tr>
+                     
+                    <td class="px-4 py-3">1</td>
+                    <td class="px-4 py-3">Basic Membership</td>
+                    <td class="px-4 py-3">Offers access to standard gym facilities like cardio and weight equipment during regular hours. Ideal for individuals seeking general fitness without additional perks.</td>
+                    <td class="px-4 py-3">1000 /-</td>
+                    <td class="px-4 py-3">30 Days</td>
+                    <td class="px-4 py-3">1 Month</td>
+                   
+                  <td class="px-4 py-3">
+                    <a href="#" class="text-blue-500 hover:underline mr-2">
+                        <img src="pages\images\editvector.png" alt="Edit" class="inline-block w-5 h-5">
+                    </a>
+                    <a href="#" class="text-red-500 hover:underline">
+                        <img src="pages\images\deletevector.png" alt="Delete" class="inline-block w-5 h-5">
+                    </a>
+                </td>
+                </tr>
+                
+                  </tbody>
+          </table>
+          </div>
+        </div>
+      </div>
+
+    
+</body>
+</html>
