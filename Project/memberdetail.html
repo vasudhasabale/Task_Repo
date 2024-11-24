@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+        <!-- Sidebar -->
+        <div class="flex h-screen">
+          <!-- Left Sidebar -->
+          <div class="w-64 h-screen bg-black text-white">
+              <!-- Logo -->
+              <div class="flex items-center justify-center h-20 bg-black">
+                <img src="images/logo.png" alt="Fitness Logo" class="h-16">
+              </div>
+            
+              <!-- Navigation Menu -->
+              <nav class="mt-4">
+                <ul>
+                  <!-- Admin -->
+                  <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                    <span class="material-icons mr-4"><img src="images/menu1.png" width="20px" height="20px"></span>
+                    <span><a href="registration.html">Admin</a></span>
+                  </li>
+            
+                  <!-- All Members Section -->
+                  <li>
+                    <div class="group">
+                      <div class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                        <span class="material-icons mr-4"><img src="images/menu2.png" width="25px" height="25px"></span>
+                        <span>All members</span>
+                        <span class="ml-auto material-icons group-hover:rotate-180 transition-transform">
+                          V
+                        </span>
+                      </div>
+                      <!-- Dropdown Submenu -->
+                      <ul class="hidden group-hover:block bg-gray-800">
+                        <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                          <span class="material-icons mr-4"><img src="images/menu3 white.png" width="25px" height="25px"></span>
+                          <span><a href="addtrainee.html">Add Trainee</a></span>
+                        </li>
+                        <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                          <span class="material-icons mr-4"><img src="images/menu4.png" width="25px" height="25px"></span>
+                          <span><a href="droptrainee.html">Drop Trainee</a></span>
+                        </li>
+                        <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer text-orange-400">
+                          <span class="material-icons mr-4"><img src="images/menu5 org.png" width="25px" height="25px"></span>
+                          <span>Member Details</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+            
+                  <!-- Trainer -->
+                  <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                    <span class="material-icons mr-4"><img src="images/menu6.png" width="25px" height="25px"></span>
+                    <span>Trainer</span>
+                  </li>
+            
+                  <!-- Trainee -->
+                  <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                    <span class="material-icons mr-4"><img src="images/menu7.png" width="25px" height="25px"></span>
+                    <span>Trainee</span>
+                  </li>
+            
+                  <!-- Health Updates -->
+                  <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                    <span class="material-icons mr-4"><img src="images/menu8.png" width="25px" height="25px"></span>
+                    <span>Health Updates</span>
+                  </li>
+            
+                  <!-- Member Payments -->
+                  <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                    <span class="material-icons mr-4"><img src="images/menu9.png" width="25px" height="25px"></span>
+                    <span>Member Payments</span>
+                  </li>
+            
+                  <!-- Plan -->
+                  <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                    <span class="material-icons mr-4"><img src="images/menu10.png" width="25px" height="25px"></span>
+                    <span>Plan</span>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+  <!-- Main content -->
+  <main class="flex-1 p-6">
+    <!-- Header -->
+    <header class="flex justify-between items-center mb-6">
+      <h1 class="text-2xl font-bold">Welcome Admin!</h1>
+      <div class="flex items-center space-x-4">
+        <input type="text" placeholder="Search here" class="px-4 py-2 border rounded-lg focus:outline-none">
+        <button class="text-gray-600">
+          <span class="material-icons mr-4"><img src="images/Notifications.png" width="25px" height="25px"></span>
+        </button>
+        <button class="text-gray-600">
+          <span class="material-icons mr-4"><img src="images/Settings.png" width="25px" height="25px" ></span>
+        </button>
+        <span>username</span>
+        <img src="images/photo.png" alt="User" class="w-10 h-10 rounded-full">
+      </div>
+    </header>
+
+    <section>
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h2 class="text-lg font-semibold text-gray-800 mb-4">Member Details</h2>
+        <div class="overflow-auto">
+          <table class="w-full border-collapse">
+            <thead>
+              <tr class="bg-gray-200 text-gray-600 text-left">
+                <th class="p-4">Photo</th>
+                <th class="p-4">Member Name</th>
+                <th class="p-4">Contact No.</th>
+                <th class="p-4">Age</th>
+                <th class="p-4">Join Date</th>
+                <th class="p-4">End Date</th>
+                <th class="p-4">Membership</th>
+                <th class="p-4">Email ID</th>
+                <th class="p-4">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Sample Rows -->
+              <tr class="border-b">
+                <td class="p-4">
+                  <img src="images/Ellipse 524.png" alt="Member" class="rounded-full w-10 h-10">
+                </td>
+                <td class="p-4">Member Name</td>
+                <td class="p-4">1234567890</td>
+                <td class="p-4">22</td>
+                <td class="p-4">01/09/2024</td>
+                <td class="p-4">30/09/2024</td>
+                <td class="p-4">Basic Membership</td>
+                <td class="p-4">abc@gmail.com</td>
+                <td class="p-4">
+                  <button class="text-blue-500 hover:underline"><span><img src="images/edit.png" width="18px" height="18px"></span></button>
+                  <button class="text-red-500 hover:underline ml-2"><span><img src="images/delete.png" width="15px" height="15px"></span></button>
+                </td>
+              </tr>
+              <!-- Repeat rows -->
+              <tr class="border-b">
+                <td class="p-4">
+                  <img src="images/Ellipse 527.png" alt="Member" class="rounded-full w-10 h-10">
+                </td>
+                <td class="p-4">Member Name</td>
+                <td class="p-4">1234567890</td>
+                <td class="p-4">22</td>
+                <td class="p-4">01/09/2024</td>
+                <td class="p-4">30/09/2024</td>
+                <td class="p-4">Basic Membership</td>
+                <td class="p-4">abc@gmail.com</td>
+                <td class="p-4">
+                  <button class="text-blue-500 hover:underline"><span><img src="images/edit.png" width="18px" height="18px"></span></button>
+                  <button class="text-red-500 hover:underline ml-2"><span><img src="images/delete.png" width="15px" height="15px"></span></button>
+                </td>
+              </tr>
+
+              <tr class="border-b">
+                <td class="p-4">
+                  <img src="images/Ellipse 524.png" alt="Member" class="rounded-full w-10 h-10">
+                </td>
+                <td class="p-4">Member Name</td>
+                <td class="p-4">1234567890</td>
+                <td class="p-4">22</td>
+                <td class="p-4">01/09/2024</td>
+                <td class="p-4">30/09/2024</td>
+                <td class="p-4">Basic Membership</td>
+                <td class="p-4">abc@gmail.com</td>
+                <td class="p-4">
+                  <button class="text-blue-500 hover:underline"><span><img src="images/edit.png" width="18px" height="18px"></span></button>
+                  <button class="text-red-500 hover:underline ml-2"><span><img src="images/delete.png" width="15px" height="15px"></span></button>
+                </td>
+              </tr>
+
+              <tr class="border-b">
+                <td class="p-4">
+                  <img src="images/Ellipse 527.png" alt="Member" class="rounded-full w-10 h-10">
+                </td>
+                <td class="p-4">Member Name</td>
+                <td class="p-4">1234567890</td>
+                <td class="p-4">22</td>
+                <td class="p-4">01/09/2024</td>
+                <td class="p-4">30/09/2024</td>
+                <td class="p-4">Basic Membership</td>
+                <td class="p-4">abc@gmail.com</td>
+                <td class="p-4">
+                  <button class="text-blue-500 hover:underline"><span><img src="images/edit.png" width="18px" height="18px"></span></button>
+                  <button class="text-red-500 hover:underline ml-2"><span><img src="images/delete.png" width="15px" height="15px"></span></button>
+                </td>
+              </tr>
+
+              <tr class="border-b">
+                <td class="p-4">
+                  <img src="images/Ellipse 524.png" alt="Member" class="rounded-full w-10 h-10">
+                </td>
+                <td class="p-4">Member Name</td>
+                <td class="p-4">1234567890</td>
+                <td class="p-4">22</td>
+                <td class="p-4">01/09/2024</td>
+                <td class="p-4">30/09/2024</td>
+                <td class="p-4">Basic Membership</td>
+                <td class="p-4">abc@gmail.com</td>
+                <td class="p-4">
+                  <button class="text-blue-500 hover:underline"><span><img src="images/edit.png" width="18px" height="18px"></span></button>
+                  <button class="text-red-500 hover:underline ml-2"><span><img src="images/delete.png" width="15px" height="15px"></span></button>
+                </td>
+              </tr>
+
+              <tr class="border-b">
+                <td class="p-4">
+                  <img src="images/Ellipse 527.png" alt="Member" class="rounded-full w-10 h-10">
+                </td>
+                <td class="p-4">Member Name</td>
+                <td class="p-4">1234567890</td>
+                <td class="p-4">22</td>
+                <td class="p-4">01/09/2024</td>
+                <td class="p-4">30/09/2024</td>
+                <td class="p-4">Basic Membership</td>
+                <td class="p-4">abc@gmail.com</td>
+                <td class="p-4">
+                  <button class="text-blue-500 hover:underline"><span><img src="images/edit.png" width="18px" height="18px"></span></button>
+                  <button class="text-red-500 hover:underline ml-2"><span><img src="images/delete.png" width="15px" height="15px"></span></button>
+                </td>
+              </tr>
+
+              <tr class="border-b">
+                <td class="p-4">
+                  <img src="images/Ellipse 524.png" alt="Member" class="rounded-full w-10 h-10">
+                </td>
+                <td class="p-4">Member Name</td>
+                <td class="p-4">1234567890</td>
+                <td class="p-4">22</td>
+                <td class="p-4">01/09/2024</td>
+                <td class="p-4">30/09/2024</td>
+                <td class="p-4">Basic Membership</td>
+                <td class="p-4">abc@gmail.com</td>
+                <td class="p-4">
+                  <button class="text-blue-500 hover:underline"><span><img src="images/edit.png" width="18px" height="18px"></span></button>
+                  <button class="text-red-500 hover:underline ml-2"><span><img src="images/delete.png" width="15px" height="15px"></span></button>
+                </td>
+              </tr>
+
+              
+              <!-- Add more rows dynamically with backend -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
+

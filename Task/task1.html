@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+  <nav class="bg-blue-500 text-white p-4">
+    <div class="container mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <div class="text-lg font-bold">Brand</div>
+
+      <!-- Hamburger Icon for Small Screens -->
+      <button id="menu-toggle" class="md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+
+      <!-- Navigation Links -->
+      <ul id="menu" class="hidden md:flex md:space-x-8 md:text-center lg:ml-auto lg:space-x-6 lg:text-sm">
+        <li><a href="#" class="hover:text-gray-200">Home</a></li>
+        <li><a href="#" class="hover:text-gray-200">About</a></li>
+        <li><a href="#" class="hover:text-gray-200">Services</a></li>
+        <li><a href="#" class="hover:text-gray-200">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <script>
+    // Toggle the menu visibility on small screens
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Classes - Fitness Admin Panel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Sidebar -->
+    <div class="flex h-screen">
+      <!-- Left Sidebar -->
+      <div class="w-64 h-screen bg-black text-white">
+          <!-- Logo -->
+          <div class="flex items-center justify-center h-20 bg-black">
+            <img src="images/logo.png" alt="Fitness Logo" class="h-16">
+          </div>
+        
+          <!-- Navigation Menu -->
+          <nav class="mt-4">
+            <ul>
+              <!-- Admin -->
+              
+              
+
+
+              <li>
+                <div class="group">
+                  <div class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                    <span class="material-icons mr-4"><img src="images/menu1.png" width="20px" height="20px"></span>
+                    <span>Admin</span>
+                    <span class="ml-auto material-icons group-hover:rotate-180 transition-transform">
+                      V
+                    </span>
+                  </div>
+                  <!-- Dropdown Submenu -->
+                  <ul class="hidden group-hover:block bg-gray-800">
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer text-orange-400">
+                      <span class="material-icons mr-4"><img src="images/all classes org.png" width="25px" height="25px"></span>
+                      <span><a href="allclasses.html">All Classes</a></span>
+                    </li>
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                      <span class="material-icons mr-4"><img src="images/attendence.png" width="25px" height="25px"></span>
+                      <span><a href="attendence.html">Attendence</a></span>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </li>
+
+
+
+              <!-- All Members Section -->
+              <li>
+                <div class="group">
+                  <div class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                    <span class="material-icons mr-4"><img src="images/menu2.png" width="25px" height="25px"></span>
+                    <span>All members</span>
+                    <span class="ml-auto material-icons group-hover:rotate-180 transition-transform">
+                      V
+                    </span>
+                  </div>
+                  <!-- Dropdown Submenu -->
+                  <ul class="hidden group-hover:block bg-gray-800">
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                      <span class="material-icons mr-4"><img src="images/menu3 white.png" width="25px" height="25px"></span>
+                      <span><a href="addtrainee.html">Add Trainee</a></span>
+                    </li>
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                      <span class="material-icons mr-4"><img src="images/menu4.png" width="25px" height="25px"></span>
+                      <span><a href="droptrainee.html">Dropped Trainee</a></span>
+                    </li>
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer">
+                      <span class="material-icons mr-4"><img src="images/menu5.png" width="25px" height="25px"></span>
+                      <span><a href="memberdetail.html">Member Detail</a></span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+        
+              <!-- Trainer -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu6.png" width="25px" height="25px"></span>
+                <span>Trainer</span>
+              </li>
+        
+              <!-- Trainee -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu7.png" width="25px" height="25px"></span>
+                <span>Trainee</span>
+              </li>
+        
+              <!-- Health Updates -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu8.png" width="25px" height="25px"></span>
+                <span>Health Updates</span>
+              </li>
+        
+              <!-- Member Payments -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu9.png" width="25px" height="25px"></span>
+                <span>Member Payments</span>
+              </li>
+        
+              <!-- Plan -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu10.png" width="25px" height="25px"></span>
+                <span>Plan</span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+    
+
+  <!-- Main Content -->
+  <div class="flex-1 p-8">
+    <!-- Header -->
+    <header class="flex items-center justify-between">
+        <h1 class="text-2xl font-bold">Welcome Admin!</h1>
+        <div class="flex items-center">
+          <span class="material-icons mr-4"><img src="images/Notifications.png" width="25px" height="25px"></span>
+          <span class="material-icons mr-4"><img src="images/Settings.png" width="25px" height="25px" ></span>
+          <span>username</span>
+          <img src="images/photo.png" alt="User Avatar" class="ml-4 w-10 h-10 rounded-full">
+        </div>
+      </header>
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-6">
+      <h1 class="text-2xl font-semibold text-gray-800">All Classes</h1>
+      <div class="flex space-x-4">
+        <input 
+          type="text" 
+          placeholder="Search Class name" 
+          class="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:ring-blue-300">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"><span><a href="addclass.html">Add Class</a></span></button>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <div class="bg-white shadow-md rounded-lg overflow-x-auto">
+      <table class="min-w-full table-auto">
+        <thead class="bg-gray-100 text-gray-800">
+          <tr>
+            <th class="py-3 px-4 text-left">Sr.No</th>
+            <th class="py-3 px-4 text-left">Class Name</th>
+            <th class="py-3 px-4 text-left">Class Trainer</th>
+            <th class="py-3 px-4 text-left">Start Time</th>
+            <th class="py-3 px-4 text-left">End Time</th>
+            <th class="py-3 px-4 text-left">Description</th>
+            <th class="py-3 px-4 text-left">Batch</th>
+            <th class="py-3 px-4 text-left">Action</th>
+          </tr>
+        </thead>
+        <tbody class="text-gray-700">
+          <!-- Repeatable Rows -->
+          <tr class="border-t">
+            <td class="py-3 px-4">1</td>
+            <td class="py-3 px-4 flex items-center">
+              <img src="images/yoga.png" alt="Yoga Icon" class="w-6 h-6 mr-3">
+              Yoga
+            </td>
+            <td class="py-3 px-4">Trainer Name</td>
+            <td class="py-3 px-4">08:00 AM</td>
+            <td class="py-3 px-4">09:00 AM</td>
+            <td class="py-3 px-4">From a yoga class, you'll learn to improve flexibility, build strength, enhance balance, and develop  . . . . . . </td>
+            <td class="py-3 px-4">Morning</td>
+            <td class="py-3 px-4">
+              <div class="flex space-x-2">
+                <button class="text-blue-500 hover:underline"><span><img src="images/edit.png" width="18px" height="18px"></span></button>
+                <button class="text-blue-500 hover:underline"><img src="images/delete.png" width="18px" height="18px"></span></button>
+              </div>
+            </td>
+          </tr>
+          <!-- Add more rows here -->
+
+          <tr class="border-t">
+            <td class="py-3 px-4">1</td>
+            <td class="py-3 px-4 flex items-center">
+              <img src="images/yoga.png" alt="Yoga Icon" class="w-6 h-6 mr-3">
+              Yoga
+            </td>
+            <td class="py-3 px-4">Trainer Name</td>
+            <td class="py-3 px-4">08:00 AM</td>
+            <td class="py-3 px-4">09:00 AM</td>
+            <td class="py-3 px-4">From a yoga class, you'll learn to improve flexibility, build strength, enhance balance, and develop  . . . . . . </td>
+            <td class="py-3 px-4">Morning</td>
+            <td class="py-3 px-4">
+              <div class="flex space-x-2">
+                <button class="text-blue-500 hover:underline"><span><img src="images/edit.png" width="18px" height="18px"></span></button>
+                <button class="text-blue-500 hover:underline"><img src="images/delete.png" width="18px" height="18px"></span></button>
+              </div>
+            </td>
+          </tr>
+
+          <tr class="border-t">
+            <td class="py-3 px-4">1</td>
+            <td class="py-3 px-4 flex items-center">
+              <img src="images/yoga.png" alt="Yoga Icon" class="w-6 h-6 mr-3">
+              Yoga
+            </td>
+            <td class="py-3 px-4">Trainer Name</td>
+            <td class="py-3 px-4">08:00 AM</td>
+            <td class="py-3 px-4">09:00 AM</td>
+            <td class="py-3 px-4">From a yoga class, you'll learn to improve flexibility, build strength, enhance balance, and develop  . . . . . . </td>
+            <td class="py-3 px-4">Morning</td>
+            <td class="py-3 px-4">
+              <div class="flex space-x-2">
+                <button class="text-blue-500 hover:underline"><span><img src="images/edit.png" width="18px" height="18px"></span></button>
+                <button class="text-blue-500 hover:underline"><img src="images/delete.png" width="18px" height="18px"></span></button>
+              </div>
+            </td>
+          </tr>
+
+          <tr class="border-t">
+            <td class="py-3 px-4">1</td>
+            <td class="py-3 px-4 flex items-center">
+              <img src="images/yoga.png" alt="Yoga Icon" class="w-6 h-6 mr-3">
+              Yoga
+            </td>
+            <td class="py-3 px-4">Trainer Name</td>
+            <td class="py-3 px-4">08:00 AM</td>
+            <td class="py-3 px-4">09:00 AM</td>
+            <td class="py-3 px-4">From a yoga class, you'll learn to improve flexibility, build strength, enhance balance, and develop  . . . . . . </td>
+            <td class="py-3 px-4">Morning</td>
+            <td class="py-3 px-4">
+              <div class="flex space-x-2">
+                <button class="text-blue-500 hover:underline"><span><img src="images/edit.png" width="18px" height="18px"></span></button>
+                <button class="text-blue-500 hover:underline"><img src="images/delete.png" width="18px" height="18px"></span></button>
+              </div>
+            </td>
+          </tr>
+
+          <tr class="border-t">
+            <td class="py-3 px-4">1</td>
+            <td class="py-3 px-4 flex items-center">
+              <img src="images/yoga.png" alt="Yoga Icon" class="w-6 h-6 mr-3">
+              Yoga
+            </td>
+            <td class="py-3 px-4">Trainer Name</td>
+            <td class="py-3 px-4">08:00 AM</td>
+            <td class="py-3 px-4">09:00 AM</td>
+            <td class="py-3 px-4">From a yoga class, you'll learn to improve flexibility, build strength, enhance balance, and develop  . . . . . . </td>
+            <td class="py-3 px-4">Morning</td>
+            <td class="py-3 px-4">
+              <div class="flex space-x-2">
+                <button class="text-blue-500 hover:underline"><span><img src="images/edit.png" width="18px" height="18px"></span></button>
+                <button class="text-blue-500 hover:underline"><img src="images/delete.png" width="18px" height="18px"></span></button>
+              </div>
+            </td>
+          </tr>
+
+          <tr class="border-t">
+            <td class="py-3 px-4">1</td>
+            <td class="py-3 px-4 flex items-center">
+              <img src="images/yoga.png" alt="Yoga Icon" class="w-6 h-6 mr-3">
+              Yoga
+            </td>
+            <td class="py-3 px-4">Trainer Name</td>
+            <td class="py-3 px-4">08:00 AM</td>
+            <td class="py-3 px-4">09:00 AM</td>
+            <td class="py-3 px-4">From a yoga class, you'll learn to improve flexibility, build strength, enhance balance, and develop  . . . . . . </td>
+            <td class="py-3 px-4">Morning</td>
+            <td class="py-3 px-4">
+              <div class="flex space-x-2">
+                <button class="text-blue-500 hover:underline"><span><img src="images/edit.png" width="18px" height="18px"></span></button>
+                <button class="text-blue-500 hover:underline"><img src="images/delete.png" width="18px" height="18px"></span></button>
+              </div>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>
+

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Admin Dashboard</title>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Sidebar -->
+  <div class="flex h-screen">
+    <!-- Left Sidebar -->
+    <div class="w-64 h-screen bg-black text-white">
+        <!-- Logo -->
+        <div class="flex items-center justify-center h-20 bg-black">
+          <img src="images/logo.png" alt="Fitness Logo" class="h-16">
+        </div>
+      
+        <!-- Navigation Menu -->
+        <nav class="mt-4">
+          <ul>
+            <!-- Admin -->
+            <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+              <span class="material-icons mr-4"><img src="images/menu1.png" width="20px" height="20px"></span>
+              <span><a href="registration.html">Admin</a></span>
+            </li>
+      
+            <!-- All Members Section -->
+            <li>
+              <div class="group">
+                <div class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                  <span class="material-icons mr-4"><img src="images/menu2.png" width="25px" height="25px"></span>
+                  <span>All members</span>
+                  <span class="ml-auto material-icons group-hover:rotate-180 transition-transform">
+                    V
+                  </span>
+                </div>
+                <!-- Dropdown Submenu -->
+                <ul class="hidden group-hover:block bg-gray-800">
+                  <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer text-orange-400">
+                    <span class="material-icons mr-4"><img src="images/menu3.png" width="25px" height="25px"></span>
+                    <span>Add Trainee</span>
+                  </li>
+                  <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer">
+                    <span class="material-icons mr-4"><img src="images/menu4.png" width="25px" height="25px"></span>
+                    <span><a href="droptrainee.html">Dropped Trainee</a></span>
+                  </li>
+                  <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer">
+                    <span class="material-icons mr-4"><img src="images/menu5.png" width="25px" height="25px"></span>
+                    <span><a href="memberdetail.html">Member Detail</a></span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+      
+            <!-- Trainer -->
+            <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+              <span class="material-icons mr-4"><img src="images/menu6.png" width="25px" height="25px"></span>
+              <span>Trainer</span>
+            </li>
+      
+            <!-- Trainee -->
+            <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+              <span class="material-icons mr-4"><img src="images/menu7.png" width="25px" height="25px"></span>
+              <span>Trainee</span>
+            </li>
+      
+            <!-- Health Updates -->
+            <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+              <span class="material-icons mr-4"><img src="images/menu8.png" width="25px" height="25px"></span>
+              <span>Health Updates</span>
+            </li>
+      
+            <!-- Member Payments -->
+            <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+              <span class="material-icons mr-4"><img src="images/menu9.png" width="25px" height="25px"></span>
+              <span>Member Payments</span>
+            </li>
+      
+            <!-- Plan -->
+            <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+              <span class="material-icons mr-4"><img src="images/menu10.png" width="25px" height="25px"></span>
+              <span>Plan</span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      
+
+    <!-- Main Content -->
+    <div class="flex-1 p-6">
+      <header class="flex items-center justify-between">
+        <h1 class="text-2xl font-bold">Welcome Admin!</h1>
+        <div class="flex items-center">
+          <span class="material-icons mr-4"><img src="images/Notifications.png" width="25px" height="25px"></span>
+          <span class="material-icons mr-4"><img src="images/Settings.png" width="25px" height="25px" ></span>
+          <span>username</span>
+          <img src="images/photo.png" alt="User Avatar" class="ml-4 w-10 h-10 rounded-full">
+        </div>
+      </header>
+
+      <!-- Form Section -->
+      <div class="bg-white p-6 mt-6 rounded-lg shadow-lg">
+        <h2 class="text-lg font-semibold mb-4">Add Trainee</h2>
+        <form class="grid grid-cols-2 gap-6">
+          <!-- Left Column -->
+          <div>
+            <label class="block mb-2 text-sm">Name</label>
+            <input type="text" placeholder="Enter Name" class="w-full border border-gray-300 rounded p-2 mb-4">
+
+            <label class="block mb-2 text-sm">DOB</label>
+            <input type="date" class="w-full border border-gray-300 rounded p-2 mb-4">
+
+            <label class="block mb-2 text-sm">Age</label>
+            <input type="number" placeholder="##" class="w-full border border-gray-300 rounded p-2 mb-4">
+
+            <label class="block mb-2 text-sm">Membership</label>
+            <select class="w-full border border-gray-300 rounded p-2 mb-4">
+              <option>-Select Membership-</option>
+            </select>
+
+            <label class="block mb-2 text-sm">Next Payment Schedule Date</label>
+            <input type="date" class="w-full border border-gray-300 rounded p-2 mb-4">
+          </div>
+
+          <!-- Right Column -->
+          <div>
+            <label class="block mb-2 text-sm">Email ID</label>
+            <input type="email" placeholder="Enter Email ID" class="w-full border border-gray-300 rounded p-2 mb-4">
+
+            <label class="block mb-2 text-sm">Contact Number</label>
+            <input type="text" placeholder="Enter Contact Number" class="w-full border border-gray-300 rounded p-2 mb-4">
+
+            <label class="block mb-2 text-sm">Address</label>
+            <textarea placeholder="Enter Address" class="w-full border border-gray-300 rounded p-2 mb-4"></textarea>
+
+            <label class="block mb-2 text-sm">Photo</label>
+            <div class="border-dashed border-2 border-gray-300 rounded p-4 mb-4 text-center text-sm text-gray-400">
+              Upload or Drag here
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label class="block mb-2 text-sm">Join Date</label>
+                <input type="date" class="w-full border border-gray-300 rounded p-2">
+              </div>
+              <div>
+                <label class="block mb-2 text-sm">End Date</label>
+                <input type="date" class="w-full border border-gray-300 rounded p-2">
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <!-- Buttons -->
+        <div class="flex mt-6">
+          <button class="bg-orange-500 text-white px-4 py-2 rounded mr-2 hover:bg-blue-500">Save</button>
+          <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-gray-500">Reset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

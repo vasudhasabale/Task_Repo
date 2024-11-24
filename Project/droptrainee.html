@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropped Trainees - Admin Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  
+</head>
+<body class="bg-gray-100">
+
+    <!-- Sidebar -->
+    <div class="flex h-screen">
+      <!-- Left Sidebar -->
+      <div class="w-64 h-screen bg-black text-white">
+          <!-- Logo -->
+          <div class="flex items-center justify-center h-20 bg-black">
+            <img src="images/logo.png" alt="Fitness Logo" class="h-16">
+          </div>
+        
+          <!-- Navigation Menu -->
+          <nav class="mt-4">
+            <ul>
+              <!-- Admin -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu1.png" width="20px" height="20px"></span>
+                <span><a href="registration.html">Admin</a></span>
+              </li>
+        
+              <!-- All Members Section -->
+              <li>
+                <div class="group">
+                  <div class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                    <span class="material-icons mr-4"><img src="images/menu2.png" width="25px" height="25px"></span>
+                    <span>All members</span>
+                    <span class="ml-auto material-icons group-hover:rotate-180 transition-transform">
+                      V
+                    </span>
+                  </div>
+                  <!-- Dropdown Submenu -->
+                  <ul class="hidden group-hover:block bg-gray-800">
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer ">
+                      <span class="material-icons mr-4"><img src="images/menu3 white.png" width="25px" height="25px"></span>
+                      <span><a href="addtrainee.html">Add Trainee</a></span>
+                    </li>
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer text-orange-400">
+                      <span class="material-icons mr-4"><img src="images/menu4 org.png" width="25px" height="25px"></span>
+                      <span>Dropped Trainee</span>
+                    </li>
+                    <li class="flex items-center px-8 py-3 hover:bg-gray-700 cursor-pointer">
+                      <span class="material-icons mr-4"><img src="images/menu5.png" width="25px" height="25px"></span>
+                      <span><a href="memberdetail.html">Member Detail</a></span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+        
+              <!-- Trainer -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu6.png" width="25px" height="25px"></span>
+                <span>Trainer</span>
+              </li>
+        
+              <!-- Trainee -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu7.png" width="25px" height="25px"></span>
+                <span>Trainee</span>
+              </li>
+        
+              <!-- Health Updates -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu8.png" width="25px" height="25px"></span>
+                <span>Health Updates</span>
+              </li>
+        
+              <!-- Member Payments -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu9.png" width="25px" height="25px"></span>
+                <span>Member Payments</span>
+              </li>
+        
+              <!-- Plan -->
+              <li class="flex items-center px-6 py-3 hover:bg-gray-700 cursor-pointer">
+                <span class="material-icons mr-4"><img src="images/menu10.png" width="25px" height="25px"></span>
+                <span>Plan</span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+    <!-- Main content -->
+    <main class="flex-1 p-6">
+      <!-- Header -->
+      <header class="flex justify-between items-center mb-6">
+        <h1 class="text-2xl font-bold">Welcome Admin!</h1>
+        <div class="flex items-center space-x-4">
+          <input type="text" placeholder="Search here" class="px-4 py-2 border rounded-lg focus:outline-none">
+          <button class="text-gray-600">
+            <span class="material-icons mr-4"><img src="images/Notifications.png" width="25px" height="25px"></span>
+          </button>
+          <button class="text-gray-600">
+            <span class="material-icons mr-4"><img src="images/Settings.png" width="25px" height="25px" ></span>
+          </button>
+          <span>username</span>
+          <img src="images/photo.png" alt="User" class="w-10 h-10 rounded-full">
+        </div>
+      </header>
+
+      <!-- Dropped Trainees Table -->
+      <div class="bg-white rounded-lg shadow-lg p-6">
+        <h2 class="text-xl font-bold mb-4">Dropped Trainees</h2>
+        <div class="overflow-auto">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr>
+                <th class="p-2 border-b font-medium text-gray-600">Photo</th>
+                <th class="p-2 border-b font-medium text-gray-600">Trainee Name</th>
+                <th class="p-2 border-b font-medium text-gray-600">Contact No.</th>
+                <th class="p-2 border-b font-medium text-gray-600">Join Date</th>
+                <th class="p-2 border-b font-medium text-gray-600">End Date</th>
+                <th class="p-2 border-b font-medium text-gray-600">Period</th>
+                <th class="p-2 border-b font-medium text-gray-600">Batch</th>
+                <th class="p-2 border-b font-medium text-gray-600">Class</th>
+                <th class="p-2 border-b font-medium text-gray-600">Status</th>
+                <th class="p-2 border-b font-medium text-gray-600"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-2 border-b"><img src="images/Ellipse 524.png" alt="Trainee" class="w-10 h-10 rounded-full"></td>
+                <td class="p-2 border-b">Staff Full Name</td>
+                <td class="p-2 border-b">1234567890</td>
+                <td class="p-2 border-b">01/11/2024</td>
+                <td class="p-2 border-b">31/12/2024</td>
+                <td class="p-2 border-b">60 days</td>
+                <td class="p-2 border-b">Morning</td>
+                <td class="p-2 border-b">Yoga</td>
+                <td class="p-2 border-b">Inactive </td>
+                <td class="p-2 border-b"><button><span class="material-icons text-gray-600 "><img src="images/inactive.png" width="20px" height="20px"></span></button></td>
+              </tr>
+              <!-- Repeat for more rows as needed -->
+              <tr>
+                <td class="p-2 border-b"><img src="images/Ellipse 527.png" alt="Trainee" class="w-10 h-10 rounded-full"></td>
+                <td class="p-2 border-b">Staff Full Name</td>
+                <td class="p-2 border-b">1234567890</td>
+                <td class="p-2 border-b">01/11/2024</td>
+                <td class="p-2 border-b">31/12/2024</td>
+                <td class="p-2 border-b">60 days</td>
+                <td class="p-2 border-b">Morning</td>
+                <td class="p-2 border-b">Yoga</td>
+                <td class="p-2 border-b">Inactive </td>
+                <td class="p-2 border-b"><button><span class="material-icons text-gray-600 "><img src="images/inactive.png" width="20px" height="20px"></span></button></td>
+              </tr>
+              <!-- Add additional rows as necessary -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
